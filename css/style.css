@@ -19,8 +19,9 @@ a{
 }
 
 img{
-    max-width: 200px;
-
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
 }
 
 /*
@@ -101,10 +102,23 @@ HEADER
     grid-area: content;
 }
 
-.footer{
-    grid-area: footer;
-}
-
 .anuncios{
     grid-area: anuncios;
+    background-color: #fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    gap: 30px;
 }
+
+.footer{
+    grid-area: footer;
+    background:linear-gradient(135deg, #8844ee, #b07dfd ); 
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
